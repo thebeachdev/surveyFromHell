@@ -1,0 +1,22 @@
+<form class="" action="index.html" method="post">
+  <ul style="list-style: none;">
+    {{#each listItems as |item|}}
+      <li>
+        <span>
+          <label>
+            <input id={{item.id}}
+                 type={{item.inputType}}
+                value={{item.inputValue}}
+                 name={{item.inputName}}
+                class={{item.inputClass}}
+              checked={{item.inputChecked}}> {{item.text}}
+          </label>
+        </span>
+      </li>
+    {{/each}}
+    {{#if doShowCommentBox}}
+      <textarea name={{item.textAreaStuff.name}}></textarea>
+    {{/if}}
+  </ul>
+
+</form>
