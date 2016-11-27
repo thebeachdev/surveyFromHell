@@ -380,7 +380,7 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
               "column": 4
             },
             "end": {
-              "line": 15,
+              "line": 19,
               "column": 4
             }
           },
@@ -412,14 +412,28 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode("\n          ");
           dom.appendChild(el2, el3);
-          var el3 = dom.createElement("p");
-          var el4 = dom.createTextNode("yes");
+          var el3 = dom.createElement("div");
+          dom.setAttribute(el3, "class", "questionResponse");
+          var el4 = dom.createTextNode("\n            ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createElement("p");
+          var el5 = dom.createTextNode("yes");
+          dom.appendChild(el4, el5);
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n          ");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode("\n          ");
           dom.appendChild(el2, el3);
-          var el3 = dom.createElement("p");
-          var el4 = dom.createTextNode("no");
+          var el3 = dom.createElement("div");
+          dom.setAttribute(el3, "class", "questionResponse");
+          var el4 = dom.createTextNode("\n            ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createElement("p");
+          var el5 = dom.createTextNode("no");
+          dom.appendChild(el4, el5);
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n          ");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode("\n        ");
@@ -449,11 +463,11 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
           "loc": {
             "source": null,
             "start": {
-              "line": 16,
+              "line": 20,
               "column": 4
             },
             "end": {
-              "line": 18,
+              "line": 22,
               "column": 4
             }
           },
@@ -479,7 +493,7 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
           morphs[0] = dom.createAttrMorph(element0, 'name');
           return morphs;
         },
-        statements: [["attribute", "name", ["get", "item.textAreaStuff.name", ["loc", [null, [17, 23], [17, 46]]], 0, 0, 0, 0], 0, 0, 0, 0]],
+        statements: [["attribute", "name", ["get", "item.textAreaStuff.name", ["loc", [null, [21, 23], [21, 46]]], 0, 0, 0, 0], 0, 0, 0, 0]],
         locals: [],
         templates: []
       };
@@ -494,7 +508,7 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
             "column": 0
           },
           "end": {
-            "line": 21,
+            "line": 25,
             "column": 0
           }
         },
@@ -536,7 +550,7 @@ define("survey-js/templates/components/survey-maker", ["exports"], function (exp
         morphs[1] = dom.createMorphAt(element1, 2, 2);
         return morphs;
       },
-      statements: [["block", "each", [["get", "listItems", ["loc", [null, [3, 12], [3, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [3, 4], [15, 13]]]], ["block", "if", [["get", "doShowCommentBox", ["loc", [null, [16, 10], [16, 26]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [16, 4], [18, 11]]]]],
+      statements: [["block", "each", [["get", "listItems", ["loc", [null, [3, 12], [3, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [3, 4], [19, 13]]]], ["block", "if", [["get", "doShowCommentBox", ["loc", [null, [20, 10], [20, 26]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [20, 4], [22, 11]]]]],
       locals: [],
       templates: [child0, child1]
     };

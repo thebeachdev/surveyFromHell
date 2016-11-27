@@ -1,1 +1,0 @@
-/Users/MagicBox/Projects/NodeJS/emberJSProjects/surveyFromHell/tmp/funnel-input_base_path-PrjSkKb2.tmp/0/fake_xml_http_request.js

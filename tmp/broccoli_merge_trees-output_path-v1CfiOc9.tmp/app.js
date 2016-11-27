@@ -1,1 +1,0 @@
-/Users/MagicBox/Projects/NodeJS/emberJSProjects/surveyFromHell/app/app.js
