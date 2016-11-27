@@ -1,22 +1,20 @@
 <form class="" action="index.html" method="post">
-  <ul style="list-style: none;">
+  <ol>
     {{#each listItems as |item|}}
       <li>
         <span>
           <label>
-            <input id={{item.id}}
-                 type={{item.inputType}}
-                value={{item.inputValue}}
-                 name={{item.inputName}}
-                class={{item.inputClass}}
-              checked={{item.inputChecked}}> {{item.text}}
+            {{item.question}}
+            {{!-- {{input value=item.question}} --}}
+        {{!--TODO: I want to make it a select yes or no --}}
           </label>
+          <p>yes</p>
+          <p>no</p>
         </span>
       </li>
     {{/each}}
     {{#if doShowCommentBox}}
       <textarea name={{item.textAreaStuff.name}}></textarea>
     {{/if}}
-  </ul>
-
+  </ol>
 </form>
